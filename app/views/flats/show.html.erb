@@ -1,0 +1,51 @@
+<div class="navbar bg-light">
+  <h1 class="navbar-brand mx-3">Simple Airbnb</h1>
+  <div class="d-flex flex-row">
+    <div class="nav-item btn btn-outline-primary custom-btn mx-2">
+      <%= link_to "Add Flat", new_flat_path %>
+    </div>
+  </div>
+</div>
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.rocketmortgage.com/resources-cmsassets/RocketMortgage.com/Article_Images/Large_Images/Stock-Airbnb-Home-AdobeStock-298309756%20-%20Copy-2.jpeg);">
+</div>
+
+<div class="container">
+  <div class="row my-4">
+    <div class="col-8">
+      <div class="card mb-3">
+        <div class="card-body bg-light">
+          <h1><%= @flat.name %></h1>
+          <p><%= @flat.address %></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body bg-light">
+          <h2>A bit more about this flat...</h2>
+          <%= @flat.description %>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="card mb-3">
+        <div class="card-body bg-light">
+          <h3>Book this place!</h3>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-body bg-light">
+          <h3>Details</h3>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body bg-light">
+          <h3>Share</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
